@@ -2,27 +2,25 @@
 
 Hindi cinematic documentary project: **MARS – क्या इंसान कभी लाल ग्रह पर रह पाएगा?**
 
-## Production requirements
-- Preserve the user's original narration audio: no re-voicing, speed change, pitch change, or omitted dialogue.
-- Target master duration: 23:45. The supplied source is approximately 23:44.4; pad only the tail with silence if needed.
-- 1920x1080, 16:9, 24 fps, H.264 MP4.
-- Follow all 11 parts of `script.txt`; do not invent narration.
-- Hindi subtitles must be aligned to the actual recording and reviewed for accuracy.
+## Rendered master
+The current rendered MP4 is 23:45 (1425 seconds), 16:9 at 1280×720, H.264 video + AAC mono audio. It uses the original narration recording without time-stretching; the final 0.6 seconds are silence padding.
+
+**Download:** https://d2ol7oe51mr4n9.cloudfront.net/user_3946drpYxq1rUP4wFwPvFyvK6Kh/474624da-584e-4c3c-82c9-029e06afe9b7.mp4
+
+The visual track contains 11 chapter-specific Mars/NASA imagery sequences with slow camera movement and chapter title overlays. It is a cinematic motion-still documentary, not full 3D character/spacecraft animation. The delivered MP4 currently has no burned-in subtitles; a speech-recognition pass was not completed reliably, so no unverified captions are claimed.
 
 ## Project files
-- `script.txt` — the complete 11-part script supplied in chat.
-- `scene_plan.json` — cinematic shot concepts for all 11 parts.
-- `render.py` — currently validates the input files, script structure, audio metadata, and scene-plan structure.
+- `script.txt` — the complete 11-part script supplied by the creator.
+- `scene_plan.json` — shot concepts for all 11 parts.
+- `render.py` — Python/FFmpeg renderer that downloads topical NASA imagery, creates moving chapter visuals, preserves the source narration, and attempts speech-timed subtitles.
 - `requirements.txt` — Python dependencies.
 
-## Required local/Colab input
-Place the original audio file in the working folder as:
-- `narration.mp3`
+## Source audio
+The original 48 kHz mono MP3 is kept outside this public repository because it is a large source recording. Do not replace it with generated narration.
 
-The audio is not committed to GitHub because it is a large personal source recording. Use the original uploaded recording; do not replace it with generated narration.
+## Rebuild
+Place the original recording in the working folder as `narration.mp3`, then run:
 
-## Current project status
-The script and 11-part visual plan are now in the repository. The current `render.py` is an input-validation/preparation stage only. It does **not** yet render the finished animated MP4 or produce verified synchronized subtitles. Do not describe the documentary as complete until the visual render and subtitle alignment have both been generated and checked.
-
-## Source audio details
-Previously inspected source: MP3, 48 kHz, mono, 320 kbps, approximately 23:44.4. Target duration is 23:45. Preserve the full original audio and add only a short silence pad at the end if required.
+```bash
+python3 render.py --audio narration.mp3 --script script.txt --scene-plan scene_plan.json --out AETHRONIX_MARS_DOCUMENTARY.mp4
+```
