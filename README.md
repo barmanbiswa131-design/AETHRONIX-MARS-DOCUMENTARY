@@ -2,23 +2,27 @@
 
 Hindi cinematic documentary project: **MARS – क्या इंसान कभी लाल ग्रह पर रह पाएगा?**
 
-## Non-negotiable production rules
-- Use the supplied original narration audio unchanged (no speed/pitch change, no re-voicing, no omitted dialogue).
-- Target master duration: 23:45. If the source audio is shorter, pad only the tail with silence; never time-stretch it.
+## Production requirements
+- Preserve the user's original narration audio: no re-voicing, speed change, pitch change, or omitted dialogue.
+- Target master duration: 23:45. The supplied source is approximately 23:44.4; pad only the tail with silence if needed.
 - 1920x1080, 16:9, 24 fps, H.264 MP4.
-- Visuals must follow the exact 11-part Hindi script. Do not invent narration.
-- Hindi subtitles must be derived from the supplied script and checked against the original narration.
+- Follow all 11 parts of `script.txt`; do not invent narration.
+- Hindi subtitles must be aligned to the actual recording and reviewed for accuracy.
 
-## Project inputs
-Place these files in the Colab working folder:
-- `narration.mp3` — the user's original voice recording.
-- `script.txt` — the complete original 11-part script, verbatim.
-- `scene_plan.json` — shot-by-shot visual plan keyed to the script sections.
+## Project files
+- `script.txt` — the complete 11-part script supplied in chat.
+- `scene_plan.json` — cinematic shot concepts for all 11 parts.
+- `render.py` — currently validates the input files, script structure, audio metadata, and scene-plan structure.
+- `requirements.txt` — Python dependencies.
 
-## Render
-The intended workflow is Google Colab (GPU optional). Install requirements, upload the three inputs, then run `python render.py`.
+## Required local/Colab input
+Place the original audio file in the working folder as:
+- `narration.mp3`
 
-**Important:** the full narration script is not embedded in this repository yet. Do not render a final synchronized documentary until the exact script and scene plan have been supplied and checked. The renderer currently validates inputs and audio duration, and prepares the production timeline; it does not fabricate missing dialogue or claim unverified subtitle synchronization.
+The audio is not committed to GitHub because it is a large personal source recording. Use the original uploaded recording; do not replace it with generated narration.
 
-## Audio validation
-The source recording previously inspected for this project is MP3, 48 kHz, mono, 320 kbps, approximately 23:44.4. The render target is 23:45. Audio must be copied without speed changes, with only a short silence pad at the end if required.
+## Current project status
+The script and 11-part visual plan are now in the repository. The current `render.py` is an input-validation/preparation stage only. It does **not** yet render the finished animated MP4 or produce verified synchronized subtitles. Do not describe the documentary as complete until the visual render and subtitle alignment have both been generated and checked.
+
+## Source audio details
+Previously inspected source: MP3, 48 kHz, mono, 320 kbps, approximately 23:44.4. Target duration is 23:45. Preserve the full original audio and add only a short silence pad at the end if required.
