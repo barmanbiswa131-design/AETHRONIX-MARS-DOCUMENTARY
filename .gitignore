@@ -1,0 +1,7 @@
+build/
+*.mp4
+*.srt
+narration.mp3
+script.txt
+scene_plan.json
+__pycache__/
