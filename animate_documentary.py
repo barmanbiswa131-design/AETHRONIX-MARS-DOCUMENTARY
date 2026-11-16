@@ -27,6 +27,22 @@ rng=np.random.default_rng(20261116)
 SCENES=[
  'planet','solar','gravity','mountains','water','life','rover','helicopter','habitat','colony','cosmos'
 ]
+# Multiple moving documentary shots per narration chapter. Each cut changes the
+# environment/action so the film does not hold on one illustration for minutes.
+SHOT_MAP={
+ 1:['planet','solar','mountains','rover','cosmos'],
+ 2:['solar','planet','mountains','gravity','water'],
+ 3:['gravity','habitat','rover','planet','cosmos'],
+ 4:['mountains','planet','water','rover','solar'],
+ 5:['water','mountains','life','rover','planet'],
+ 6:['life','rover','water','mountains','cosmos'],
+ 7:['rover','planet','mountains','life','solar'],
+ 8:['helicopter','rover','planet','helicopter','cosmos'],
+ 9:['habitat','colony','gravity','water','rover','cosmos'],
+ 10:['colony','rover','helicopter','habitat','solar'],
+ 11:['cosmos','planet','life','rover','solar']
+}
+SHOT_SECONDS=13.0
 
 def poly(d, pts, fill, outline=None, width=1): d.polygon(pts,fill=fill,outline=outline,width=width)
 def line(d, pts, fill, width=1): d.line(pts,fill=fill,width=width)
@@ -176,7 +192,13 @@ def draw_overlay(d,idx,title,t):
     d.text((20,315),labels[idx-1],font=small,fill=(250,232,210,235))
 
 def render_frame(idx,title,scene,t):
-    im=make_bg(scene,idx); d=ImageDraw.Draw(im,'RGBA')
+    # Cut to a new animated shot every ~13 seconds, selected to match the chapter.
+    shots=SHOT_MAP[idx]
+    shot_no=int(t//SHOT_SECONDS)%len(shots)
+    scene=shots[shot_no]
+    local_t=t%SHOT_SECONDS
+    t=local_t
+    im=make_bg(scene,idx*31+shot_no); d=ImageDraw.Draw(im,'RGBA')
     # Animated dust grains / atmospheric particles drift across every surface scene.
     for k in range(32):
         x=(k*83 + int(t*(16+(k%4)*7)))%W; y=(k*47 + int(8*math.sin(t*.7+k)))%300
@@ -242,6 +264,9 @@ def render_frame(idx,title,scene,t):
         circle(d,(earthx-32,earthy-32,earthx+32,earthy+32),(60,120,190,255),(180,215,240,255),2)
         circle(d,(earthx-20,earthy-8,earthx+4,earthy+12),(85,155,110,220))
         draw_rover(d,t,scale=.5)
+    # Tiny shot marker makes each cut feel like a documentary sequence, not a slide.
+    d.rounded_rectangle((510,15,622,39),radius=6,fill=(4,8,15,175),outline=(180,115,82,170),width=1)
+    d.text((520,22),f'SHOT {shot_no+1:02d}/{len(shots):02d}',font=small,fill=(240,220,200,230))
     draw_overlay(d,idx,title,t)
     return im.convert('RGB')
 
