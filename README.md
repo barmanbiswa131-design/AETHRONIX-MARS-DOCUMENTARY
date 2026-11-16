@@ -29,3 +29,14 @@ python3 animate_documentary.py
 ```
 
 The output is `AETHRONIX_MARS_ANIMATED.mp4`.
+
+
+## Shot-by-shot documentary master
+
+- Output: `AETHRONIX_MARS_SHOT_BY_SHOT.mp4`
+- Runtime: 23:45 (1425 seconds), 1280x720, 24 fps
+- Audio: original Hindi narration preserved
+- Storyboard: 309 narration-matched visual beats across all 11 chapters
+- The renderer splits the supplied narration script into short spoken beats, classifies each beat by topic, and creates a fresh procedural animated shot for it. It includes dedicated visual scenes for Mars geology, iron oxide, orbital motion, day/year, seasons, temperature, gravity, atmosphere, radiation, Olympus Mons, Valles Marineris, ancient water, subsurface ice, biosignatures, rover sampling, spacecraft, landing, Ingenuity, habitats, oxygen systems, farming, solar power and human exploration.
+- All visuals are generated procedurally in code; this is animated motion-graphics, not real NASA footage or photorealistic 3D CGI.
+- Source: `animate_documentary.py`; narration and script: `narration.mp3`, `script.txt`.
