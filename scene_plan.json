@@ -1,0 +1,323 @@
+[
+  {
+    "part": 1,
+    "title": "एक रहस्यमयी लाल दुनिया",
+    "visual_style": "cinematic photorealistic Mars exploration, slow camera moves, dust, volumetric light, no text baked into image",
+    "shots": [
+      {
+        "id": "01A",
+        "visual": "Deep-space view of Earth shrinking in the distance as camera travels toward Mars; cinematic starfield and realistic planet scale"
+      },
+      {
+        "id": "01B",
+        "visual": "Wide aerial sweep over an immense silent Martian desert, red dust plains, distant mountains and deep valleys"
+      },
+      {
+        "id": "01C",
+        "visual": "Close-up of wind-shaped red regolith and fine dust moving across rocks; empty, silent landscape"
+      },
+      {
+        "id": "01D",
+        "visual": "A mysterious ancient Mars landscape at dawn, subtle transition from barren present to a faint watery ancient-world vision"
+      },
+      {
+        "id": "01E",
+        "visual": "Hero reveal of Mars as a full red planet against black space, then AETHRONIX documentary title treatment"
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "title": "मंगल ग्रह आखिर है क्या?",
+    "visual_style": "scientific cinematic planetary visualization, accurate scale cues, smooth camera motion",
+    "shots": [
+      {
+        "id": "02A",
+        "visual": "Solar system orbital visualization showing Mars as fourth planet from Sun, Earth nearby"
+      },
+      {
+        "id": "02B",
+        "visual": "Macro view of iron-rich Martian rocks and red dust, visual comparison to rusted iron"
+      },
+      {
+        "id": "02C",
+        "visual": "Mars globe rotating with subtle diameter comparison against Earth"
+      },
+      {
+        "id": "02D",
+        "visual": "Time-lapse day-night cycle over Martian horizon, sunrise and sunset"
+      },
+      {
+        "id": "02E",
+        "visual": "Mars orbit around Sun with season transitions, then extreme cold landscape and frost"
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "title": "मंगल पर गुरुत्वाकर्षण और वातावरण",
+    "visual_style": "clear science explainer with realistic astronaut scale and atmospheric layers",
+    "shots": [
+      {
+        "id": "03A",
+        "visual": "Astronaut performing a slow high-gravity-style hop on Mars, dust rising gently; safe educational depiction"
+      },
+      {
+        "id": "03B",
+        "visual": "Side-by-side Earth and Mars gravity comparison using an abstract 100 kg mass icon and 38 percent indicator"
+      },
+      {
+        "id": "03C",
+        "visual": "Atmospheric composition visualization: dense Earth atmosphere versus very thin Mars atmosphere, CO2 dominant"
+      },
+      {
+        "id": "03D",
+        "visual": "Solar radiation particles reaching Mars surface with minimal atmospheric shielding, non-graphic scientific visualization"
+      },
+      {
+        "id": "03E",
+        "visual": "Concept habitat dome with life-support equipment, oxygen system, thermal insulation and radiation shielding"
+      }
+    ]
+  },
+  {
+    "part": 4,
+    "title": "मंगल के विशाल पहाड़ और रहस्यमयी घाटियाँ",
+    "visual_style": "epic high-altitude planetary aerial cinematography",
+    "shots": [
+      {
+        "id": "04A",
+        "visual": "Olympus Mons emerges over the Martian horizon, immense shield volcano seen from orbital altitude"
+      },
+      {
+        "id": "04B",
+        "visual": "Scale comparison of Olympus Mons with Mount Everest using clean scientific silhouette graphics"
+      },
+      {
+        "id": "04C",
+        "visual": "Aerial flight along the vast Valles Marineris canyon system, layered cliffs and shadows"
+      },
+      {
+        "id": "04D",
+        "visual": "Close-up of exposed rock strata, crater rims and geological layers"
+      },
+      {
+        "id": "04E",
+        "visual": "Slow cinematic pullback revealing Mars as a geological history archive"
+      }
+    ]
+  },
+  {
+    "part": 5,
+    "title": "क्या मंगल पर कभी पानी था?",
+    "visual_style": "scientific reconstruction with ancient-to-present transitions",
+    "shots": [
+      {
+        "id": "05A",
+        "visual": "Present-day dry Mars surface, then dissolve into an ancient Mars river valley"
+      },
+      {
+        "id": "05B",
+        "visual": "Ancient Martian river flowing into a broad lake under a thicker hazy sky"
+      },
+      {
+        "id": "05C",
+        "visual": "Orbital view of branching valley networks and ancient delta fan structures"
+      },
+      {
+        "id": "05D",
+        "visual": "Mineral layers and water-altered rocks in close-up, rover camera perspective"
+      },
+      {
+        "id": "05E",
+        "visual": "Atmosphere gradually thinning in a time-lapse visualization as surface water retreats"
+      },
+      {
+        "id": "05F",
+        "visual": "Polar ice cap and underground ice cutaway illustration, clear distinction between ice and liquid water"
+      }
+    ]
+  },
+  {
+    "part": 6,
+    "title": "क्या मंगल पर जीवन था?",
+    "visual_style": "careful astrobiology investigation, no depiction claiming confirmed life",
+    "shots": [
+      {
+        "id": "06A",
+        "visual": "NASA-style rover examining layered Martian rock in Jezero-like terrain"
+      },
+      {
+        "id": "06B",
+        "visual": "Macro scientific visualization of Cheyava Falls-like rock textures and mineral veins"
+      },
+      {
+        "id": "06C",
+        "visual": "Sample tube containing a rock core, close-up with Sapphire Canyon sample label as separate overlay"
+      },
+      {
+        "id": "06D",
+        "visual": "Laboratory scientists studying sample imagery and chemical data on monitors"
+      },
+      {
+        "id": "06E",
+        "visual": "Two explanatory possibilities: biological process and non-biological geochemistry, presented neutrally"
+      },
+      {
+        "id": "06F",
+        "visual": "Quiet Mars horizon with open question mood, no alien creatures or confirmed-life imagery"
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "title": "मंगल पर इंसान की जगह रोबोट क्यों जाते हैं?",
+    "visual_style": "realistic space mission documentary, spacecraft and rover operations",
+    "shots": [
+      {
+        "id": "07A",
+        "visual": "Earth and Mars in separate orbits with changing distance visualized"
+      },
+      {
+        "id": "07B",
+        "visual": "Interplanetary spacecraft cruising through deep space toward Mars"
+      },
+      {
+        "id": "07C",
+        "visual": "Robotic lander descending through thin Martian atmosphere with parachute and retropropulsion"
+      },
+      {
+        "id": "07D",
+        "visual": "Curiosity rover moving across Gale Crater terrain, mast cameras and wheels visible"
+      },
+      {
+        "id": "07E",
+        "visual": "Perseverance rover drilling a rock core and sealing a sample tube"
+      },
+      {
+        "id": "07F",
+        "visual": "Concept sample-return spacecraft and Earth laboratory receiving sealed samples, clearly future-concept imagery"
+      }
+    ]
+  },
+  {
+    "part": 8,
+    "title": "मंगल पर पहली उड़ान: Ingenuity",
+    "visual_style": "precise engineering documentary, small rotorcraft flight on Mars",
+    "shots": [
+      {
+        "id": "08A",
+        "visual": "Ingenuity helicopter resting on Martian ground beside Perseverance rover"
+      },
+      {
+        "id": "08B",
+        "visual": "Close view of four rotor blades and compact solar-powered helicopter body"
+      },
+      {
+        "id": "08C",
+        "visual": "Ingenuity lifting off and hovering over Mars, low-gravity thin-atmosphere flight visualization"
+      },
+      {
+        "id": "08D",
+        "visual": "Aerial view from helicopter height over rocky Martian terrain"
+      },
+      {
+        "id": "08E",
+        "visual": "Timeline graphic showing 72 completed flights and final flight in January 2024"
+      },
+      {
+        "id": "08F",
+        "visual": "Quiet helicopter on the surface with rover in distance, respectful mission-end closing"
+      }
+    ]
+  },
+  {
+    "part": 9,
+    "title": "क्या इंसान मंगल पर रह सकता है?",
+    "visual_style": "grounded near-future human Mars habitat concept, realistic engineering",
+    "shots": [
+      {
+        "id": "09A",
+        "visual": "Small crew of suited astronauts approaching a sealed habitat module on Mars"
+      },
+      {
+        "id": "09B",
+        "visual": "Interior life-support room with oxygen generation equipment and monitoring displays"
+      },
+      {
+        "id": "09C",
+        "visual": "Underground ice extraction concept and water recycling system"
+      },
+      {
+        "id": "09D",
+        "visual": "Insulated habitat interior with thermal control systems during an exterior dust storm"
+      },
+      {
+        "id": "09E",
+        "visual": "Habitat partially shielded by regolith berms for radiation protection"
+      },
+      {
+        "id": "09F",
+        "visual": "Controlled greenhouse with LED-lit crops and hydroponic growing trays"
+      },
+      {
+        "id": "09G",
+        "visual": "Astronaut looking through habitat window at distant Earth, emphasizing isolation and long communication delays"
+      }
+    ]
+  },
+  {
+    "part": 10,
+    "title": "मंगल का भविष्य और इंसान का अगला कदम",
+    "visual_style": "forward-looking but scientifically cautious mission documentary",
+    "shots": [
+      {
+        "id": "10A",
+        "visual": "Perseverance rover traversing rugged ancient terrain, wheel tracks visible"
+      },
+      {
+        "id": "10B",
+        "visual": "Scientific map-style overhead route visualization with rover path and geological targets"
+      },
+      {
+        "id": "10C",
+        "visual": "Engineers testing a Mars habitat module and life-support hardware in a terrestrial test facility"
+      },
+      {
+        "id": "10D",
+        "visual": "Concept human landing vehicle descending toward a prepared Mars outpost"
+      },
+      {
+        "id": "10E",
+        "visual": "Small modular research base on Mars at sunrise, clearly labeled as a future concept"
+      }
+    ]
+  },
+  {
+    "part": 11,
+    "title": "आखिरी सवाल: क्या हम ब्रह्मांड में अकेले हैं?",
+    "visual_style": "emotional cinematic finale, reflective and scientifically grounded",
+    "shots": [
+      {
+        "id": "11A",
+        "visual": "Slow cinematic glide over ancient Martian river delta preserved in rock"
+      },
+      {
+        "id": "11B",
+        "visual": "Sealed Mars sample inside a high-security Earth laboratory, scientists examining it"
+      },
+      {
+        "id": "11C",
+        "visual": "Wide shot of Mars horizon with a tiny rover silhouette, vast quiet landscape"
+      },
+      {
+        "id": "11D",
+        "visual": "Mars seen from orbit with Earth faintly visible in the distance, contemplative composition"
+      },
+      {
+        "id": "11E",
+        "visual": "Fade to black with clean AETHRONIX end card and tagline: सवाल बड़े हैं, खोज जारी है"
+      }
+    ]
+  }
+]
