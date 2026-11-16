@@ -1,26 +1,31 @@
 # AETHRONIX — Mars Documentary
 
-Hindi cinematic documentary project: **MARS – क्या इंसान कभी लाल ग्रह पर रह पाएगा?**
+**MARS – क्या इंसान कभी लाल ग्रह पर रह पाएगा?**
 
-## Rendered master
-The current rendered MP4 is 23:45 (1425 seconds), 16:9 at 1280×720, H.264 video + AAC mono audio. It uses the original narration recording without time-stretching; the final 0.6 seconds are silence padding.
+## Animated master video
 
-**Download:** https://d2ol7oe51mr4n9.cloudfront.net/user_3946drpYxq1rUP4wFwPvFyvK6Kh/474624da-584e-4c3c-82c9-029e06afe9b7.mp4
+**Watch / download:** https://d2ol7oe51mr4n9.cloudfront.net/user_3946drpYxq1rUP4wFwPvFyvK6Kh/f7ca90bd-f86d-40aa-980e-75fd4405c072.mp4
 
-The visual track contains 11 chapter-specific Mars/NASA imagery sequences with slow camera movement and chapter title overlays. It is a cinematic motion-still documentary, not full 3D character/spacecraft animation. The delivered MP4 currently has no burned-in subtitles; a speech-recognition pass was not completed reliably, so no unverified captions are claimed.
+- Duration: 23:45
+- 1280×720, 16:9, 24 fps, H.264 + AAC
+- Original narration preserved; tail padded to exactly 23:45
+- All visuals are procedural code-drawn animation — no real footage or NASA photos.
+- Animated scenes include a moving Mars rover with rotating wheels and articulated science arm, low-gravity astronaut movement, orbiting planets, animated river ripples, rover laser scan, Ingenuity-style helicopter flight with spinning rotors and dust downwash, habitat modules, solar arrays, and a landing vehicle.
+- This is stylized 2D motion-graphics animation, not photorealistic 3D CGI.
 
-## Project files
-- `script.txt` — the complete 11-part script supplied by the creator.
-- `scene_plan.json` — shot concepts for all 11 parts.
-- `render.py` — Python/FFmpeg renderer that downloads topical NASA imagery, creates moving chapter visuals, preserves the source narration, and attempts speech-timed subtitles.
-- `requirements.txt` — Python dependencies.
+## Source files
 
-## Source audio
-The original 48 kHz mono MP3 is kept outside this public repository because it is a large source recording. Do not replace it with generated narration.
+- `script.txt` — complete 11-part narration script.
+- `scene_plan.json` — original chapter shot plan.
+- `animate_documentary.py` — procedural animation renderer. It draws the scenes and moving objects in Python/Pillow and encodes the full-length MP4 with FFmpeg.
+- `render.py` — earlier NASA-still/slow-zoom renderer (kept for reference).
 
 ## Rebuild
-Place the original recording in the working folder as `narration.mp3`, then run:
+
+Install Python packages from `requirements.txt` and make sure FFmpeg is installed. Put the original source recording in the project directory as `narration.mp3`, then run:
 
 ```bash
-python3 render.py --audio narration.mp3 --script script.txt --scene-plan scene_plan.json --out AETHRONIX_MARS_DOCUMENTARY.mp4
+python3 animate_documentary.py
 ```
+
+The output is `AETHRONIX_MARS_ANIMATED.mp4`.
